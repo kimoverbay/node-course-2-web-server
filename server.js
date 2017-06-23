@@ -65,6 +65,13 @@ app.get('/about', (request, response)  => {
    });
 });
 
+
+app.get('/honey', (request, response)  => {
+   response.render('honey.hbs', {
+        pageTitle: 'Honey Page',
+   });
+});
+
 app.get('/projects', (request, response)  => {
    response.render('projects.hbs', {
         pageTitle: 'Projects Page',
