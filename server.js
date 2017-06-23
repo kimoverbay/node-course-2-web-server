@@ -35,6 +35,11 @@ hbs.registerHelper('getCurrentYear', () => {
     // return 'test';
 });
 
+hbs.registerHelper('getAuthor', () => {
+    return 'Kim Overbay';
+    // return 'test';
+});
+
 hbs.registerHelper('screamIt', (text) => {
     return text.toUpperCase();
 });
@@ -62,7 +67,7 @@ app.get('/about', (request, response)  => {
 
 app.get('/projects', (request, response)  => {
    response.render('projects.hbs', {
-        pageTitle: 'Project Page',
+        pageTitle: 'Projects Page',
    });
 });
 
